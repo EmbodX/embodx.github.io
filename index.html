@@ -14,7 +14,7 @@
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#news">News</a></li>
-                <li><a href="#contact" class="btn-contact">Contact Us</a></li>
+                <li><a href="#contact" class="btn-contact" id="openModalNav">Contact Us</a></li>
             </ul>
         </div>
     </nav>
@@ -87,24 +87,40 @@
         <div class="container">
             <h2 class="section-title">Get in Touch</h2>
             <p class="contact-subtitle">Interested in learning more about EmbodX? We'd love to hear from you.</p>
+            <button class="btn-primary btn-large" id="openModal">Contact Us</button>
+        </div>
+    </section>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2 class="modal-title">Send us a message</h2>
+            <p class="modal-subtitle">We'll get back to you as soon as possible</p>
             
             <form class="contact-form" action="https://formspree.io/f/mwpgrorl" method="POST">
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Your Name" required>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <input type="email" name="email" placeholder="Your Email" required>
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="How can we help?" required>
                 </div>
                 <div class="form-group">
-                    <input type="text" name="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group">
-                    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us more about your inquiry..." rows="5" required></textarea>
                 </div>
                 <button type="submit" class="btn-primary btn-large">Send Message</button>
             </form>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">

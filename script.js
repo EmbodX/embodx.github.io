@@ -1,3 +1,57 @@
+// Modal functionality
+const modal = document.getElementById('contactModal');
+const openModalBtn = document.getElementById('openModal');
+const openModalNavBtn = document.getElementById('openModalNav');
+const closeModalBtn = document.querySelector('.modal-close');
+
+function openModal(e) {
+    e.preventDefault();
+    modal.classList.add('active');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = 'auto';
+}
+
+if (openModalBtn) {
+    openModalBtn.addEventListener('click', openModal);
+}
+
+if (openModalNavBtn) {
+    openModalNavBtn.addEventListener('click', openModal);
+}
+
+if (closeModalBtn) {
+    closeModalBtn.addEventListener('click', closeModal);
+}
+
+// Close modal when clicking outside
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+    }
+});
+
+// Form submission handling
+const contactForm = document.querySelector('.contact-form');
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        // Let Formspree handle the submission
+        setTimeout(() => {
+            closeModal();
+        }, 1000);
+    });
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

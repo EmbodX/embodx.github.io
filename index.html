@@ -13,7 +13,13 @@
             <div class="logo">EmbodX</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#news">News</a></li>
+                <li><a href="https://www.linkedin.com/company/embodx/about/" target="_blank" rel="noopener noreferrer" class="linkedin-link" title="Follow us on LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                    </svg>
+                </a></li>
                 <li><a href="#contact" class="btn-contact" id="openModalNav">Contact Us</a></li>
             </ul>
         </div>
@@ -23,8 +29,8 @@
     <section class="hero">
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Embodied AI for the Future</h1>
-                <p class="hero-subtitle">Pioneering the next generation of intelligent systems that understand and interact with the physical world</p>
+                <h1 class="hero-title">Building the Brains of Future Robotics</h1>
+                <p class="hero-subtitle">Bringing general-purpose robotics out of the lab and into the real world</p>
                 <a href="#about" class="btn-primary">Learn More</a>
             </div>
         </div>
@@ -33,17 +39,96 @@
     <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p class="about-text">
-                    EmbodX is at the forefront of embodied artificial intelligence, developing cutting-edge solutions 
-                    that bridge the gap between digital intelligence and physical interaction. Our mission is to create 
-                    AI systems that don't just think, but truly understand and engage with the world around them.
+            <h2 class="section-title">About EmbodX</h2>
+            <div class="about-intro">
+                <p class="about-lead">
+                    At EmbodX, we are on a mission to bring general-purpose robotics out of the lab and into the real world. 
+                    Born from cutting-edge research at the University of Technology Sydney (UTS), we are bridging the gap 
+                    between human intent and robotic action.
                 </p>
                 <p class="about-text">
-                    We combine advanced machine learning, robotics, and computer vision to build intelligent agents 
-                    capable of perceiving, reasoning, and acting in complex real-world environments. Our interdisciplinary 
-                    team of researchers and engineers is pushing the boundaries of what's possible in AI.
+                    We believe the future of automation isn't about replacing people—it's about empowering them. By lowering 
+                    the technical barriers to entry, we are enabling a new generation of manufacturers to deploy sophisticated 
+                    robotics without writing a single line of code.
+                </p>
+            </div>
+
+            <!-- Visual Demo -->
+            <div class="demo-section">
+                <div class="demo-visual">
+                    <img src="assets/task_execution.gif" alt="EmbodX robot in action" class="demo-gif">
+                </div>
+            </div>
+
+            <!-- Approach Section -->
+            <div class="approach-section" id="how-it-works">
+                <h3 class="subsection-title">Our Approach: The Data Flywheel</h3>
+                <p class="about-text">
+                    The greatest hurdle in modern robotics is the "physical data gap." While AI has mastered language by 
+                    reading the entire internet, robots lack a comparable library of physical experiences to learn from.
+                </p>
+                <p class="about-text">
+                    EmbodX is solving this by creating a Data Flywheel for physical intelligence:
+                </p>
+                
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-number">01</div>
+                        <h4 class="feature-title">Democratize Access</h4>
+                        <p class="feature-text">
+                            We provide an intuitive, AR-powered interface that allows anyone to "sketch" robot trajectories 
+                            in the real world. By making programming as easy as showing the robot what to do, we unlock 
+                            automation for SMEs and non-experts.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number">02</div>
+                        <h4 class="feature-title">Capture Real-World Skills</h4>
+                        <p class="feature-text">
+                            As more users deploy our tools to solve diverse manufacturing challenges, we capture high-quality, 
+                            real-world manipulation data that currently doesn't exist.
+                        </p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-number">03</div>
+                        <h4 class="feature-title">Train Foundation Models</h4>
+                        <p class="feature-text">
+                            This data fuels the training of our Physical Foundation Models—AI that understands physics, context, 
+                            and movement. These models feed back into our system, making our robots smarter, more adaptable, and 
+                            easier to use with every interaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- What We Do Section -->
+            <div class="what-we-do-section">
+                <div class="content-with-visual">
+                    <div class="content-text">
+                        <h3 class="subsection-title">What We Do</h3>
+                        <p class="about-text">
+                            We replace complex coding environments with intuitive Imitation Learning. Using our augmented reality (AR) 
+                            interface, operators can visualize and guide robot movements directly in their physical workspace.
+                        </p>
+                        <p class="about-text">
+                            This "no-code" approach removes the guesswork from automation. It allows general-purpose robots to be 
+                            reprogrammed for new tasks in minutes rather than weeks, transforming idle hardware into flexible, 
+                            productive teammates.
+                        </p>
+                    </div>
+                    <div class="content-visual">
+                        <img src="assets/3D_diagramatic_teaching.gif" alt="AR interface demonstration" class="demo-gif">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Vision Section -->
+            <div class="vision-section">
+                <h3 class="subsection-title">Our Vision</h3>
+                <p class="about-text vision-text">
+                    We don't believe in "dark factories" devoid of humans. We believe in a future where humans and robots 
+                    work side-by-side. EmbodX is building the infrastructure to make this collaboration seamless, safe, and 
+                    accessible to everyone.
                 </p>
             </div>
         </div>
@@ -55,28 +140,17 @@
             <h2 class="section-title">News & Updates</h2>
             <div class="news-grid">
                 <div class="news-card">
-                    <div class="news-date">December 2025</div>
-                    <h3 class="news-title">EmbodX Launch</h3>
+                    <div class="news-date">In the News</div>
+                    <h3 class="news-title">Could AI-Powered Robots Solve Australian Manufacturing's Staffing Issues?</h3>
                     <p class="news-description">
-                        We're excited to announce the official launch of EmbodX. Our team is ready to revolutionize 
-                        the field of embodied AI with innovative solutions and cutting-edge research.
+                        EmbodX is exploring innovative solutions to address the critical workforce challenges facing 
+                        Australian manufacturing. Our embodied AI technology could revolutionize how the industry 
+                        tackles staffing shortages while enhancing productivity.
                     </p>
-                </div>
-                <div class="news-card">
-                    <div class="news-date">Coming Soon</div>
-                    <h3 class="news-title">Product Announcement</h3>
-                    <p class="news-description">
-                        Stay tuned for our upcoming product announcement. We're developing groundbreaking technology 
-                        that will transform how AI systems interact with the physical world.
-                    </p>
-                </div>
-                <div class="news-card">
-                    <div class="news-date">Coming Soon</div>
-                    <h3 class="news-title">Research Publications</h3>
-                    <p class="news-description">
-                        Our research team is working on several exciting projects. Follow our journey as we share 
-                        insights and breakthroughs in embodied artificial intelligence.
-                    </p>
+                    <a href="https://www.industryupdate.com.au/article/could-ai-powered-robots-solve-australian-manufacturing%E2%80%99s-staffing-issues" 
+                       target="_blank" 
+                       rel="noopener noreferrer" 
+                       class="news-link">Read More →</a>
                 </div>
             </div>
         </div>
@@ -125,7 +199,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2025 EmbodX. All rights reserved.</p>
+            <div class="footer-content">
+                <p>&copy; 2025 EmbodX. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/embodx/about/" target="_blank" rel="noopener noreferrer" class="social-link" title="Follow us on LinkedIn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
         </div>
     </footer>
 
